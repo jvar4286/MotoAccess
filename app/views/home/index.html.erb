@@ -1,0 +1,41 @@
+<div class="container-fluid">
+  
+    <div id="accesorios" class="jumbotron">
+      <div  class="container">
+        <h1>Bienvenido a MotoAccess</h1>
+        <p>Publica tu articulo</p>
+        <hr>
+      </div>
+    </div>
+
+    <div id="titles" class="container">
+      <div class="row">
+        <div class="row">
+  
+      </div>
+
+      <hr>
+  <%= form_for :post do |f| %>
+    <p>
+      <%= f.label :Marca %><br>
+      <%= f.text_field :Marca %>
+    </p>
+
+    <p>
+      <%= f.label :Precio %><br>
+      <%= f.text_area :Precio %>
+    </p>
+
+    <p>
+      <%= f.label :Descripcion %><br>
+      <%= f.text_area :Descripcion %>
+    </p>
+    <p>
+      <%= f.submit %>
+    </p>
+<% end %>
+
+      <footer>
+        <p>&copy; 2016 BootCamp, Produced by Juan Vargas, Juan Ordoñez y Arturo.</p>
+      </footer>
+    </div>
