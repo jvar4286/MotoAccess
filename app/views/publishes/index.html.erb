@@ -1,0 +1,66 @@
+<div class="container-fluid">
+  
+    <div id="accesorios" class="jumbotron">
+      <div  class="container">
+        <h1>Bienvenido a MotoAccess</h1>
+        <p>Especially for ridders</p>
+        <hr>
+      </div>
+    </div>
+
+    <div id="titles" class="container">
+        <div class="row">
+        <div class="row">
+    
+        </div>
+    </div>
+      <hr>
+<p id="notice"><%= notice %></p>
+
+<h1>Publica tu articulo</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Make</th> <br>
+      <th>Description</th>
+      <th>Price</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @publishes.each do |publish| %>
+      <tr>
+        <td><%= publish.make %></td>
+        <td><%= publish.description %></td>
+        <td><%= publish.price %></td>
+        <td><%= link_to 'Show', publish %></td>
+        <td><%= link_to 'Edit', edit_publish_path(publish) %></td>
+        <td><%= link_to 'Destroy', publish, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Publish', new_publish_path %>
+<%= link_to 'Destroy', destroy_user_session_path, method: :delete %>
+
+ 
+  <br><br><br><br><br><br><br><br><br><br><br><br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+        <footer>
+          <p>&copy; 2016 BootCamp, Produced by Juan Vargas, Juan Ordoñez y Arturo.</p>
+        </footer>
+    
+</div>

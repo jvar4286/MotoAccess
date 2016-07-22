@@ -1,0 +1,20 @@
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Make:</strong>
+  <%= @publish.make %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @publish.description %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @publish.price %>
+</p>
+
+<%= link_to 'Edit', edit_publish_path(@publish) %> |
+<%= link_to 'Back', publishes_path %>

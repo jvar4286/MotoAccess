@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
+  resources :publishes
+  get 'publishes/show'
   devise_for :users
-  root "home#index"
-  resources :accesses
+  root "publishes#index"
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
