@@ -10,7 +10,7 @@ class PublishesController < ApplicationController
   # GET /publishes/1
   # GET /publishes/1.json
   def show
-    @user = User.find(params[:id])
+    @user = Publish.find(params[:id])
   end
 
   # GET /publishes/new
